@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: black;
+    text-decoration: white;
+    text-transform: capitalize;
+    outline: none;
+    text-align: center;
+    font-size: medium;
+}
