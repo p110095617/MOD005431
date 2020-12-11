@@ -3,6 +3,7 @@ import Navbar from './navbar';
 import Section from './section';
 import Middle from './middle';
 import Footer from './footer';
+import Form from './form'
 
 
 export {
@@ -10,6 +11,7 @@ export {
     Navbar,
     Section,
     Middle,
-    Footer
+    Footer,
+    Form
     
 }

@@ -1,38 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Switch, Route } from 'react-router-dom'
- 
-import { Header, Footer, Section, Middle, PageTitle } from './components/common'
+import { Route } from 'react-router-dom'
+import Home  from './pages/Home'
+import Contact from './pages/Contact'
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Section />
-        <Switch>
-        <Route path="/Welcome to UCP">
-            <PageTitle title="Welcome to UCP"/>
-          </Route>
 
-          <Route path="/Courses">
-            <PageTitle title="Courses"/>
-          </Route>
-
-          <Route path="/Contact Us">
-            <PageTitle title="Contact Us"/>
-          </Route>
-
-          <Route path="/Login">
-            <PageTitle title="Login"/>
-          </Route>
-        </Switch>
-
-     
-      <Middle />
-  
-      <Footer />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/Contact" component={Contact} />
+      
     </div>
   );
 }
