@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Section />
         <Switch>
         <Route path="/Welcome to UCP">
             <PageTitle title="Welcome to UCP"/>
@@ -28,7 +29,7 @@ function App() {
           </Route>
         </Switch>
 
-      <Section />
+     
       <Middle />
   
       <Footer />
